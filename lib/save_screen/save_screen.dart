@@ -4,10 +4,10 @@ import 'dart:typed_data';
 import 'package:blur/blur.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:gallery_saver_plus/gallery_saver.dart';
 import 'package:get/get.dart';
 // ignore: depend_on_referenced_packages
 import 'package:image/image.dart' as imagelib;
+import 'package:image_gallery_saver_plus/image_gallery_saver_plus.dart';
 // ignore: depend_on_referenced_packages
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
@@ -462,7 +462,9 @@ class _SaveScreenState extends State<SaveScreen> {
 
   void _savetoGallery(BuildContext context, int index) async {
     if (tempImagePath != null) {
-      GallerySaver.saveImage(tempImagePath!.path);
+      File imageFile = File(tempImagePath!.path);
+      Uint8List imageBytes = await imageFile.readAsBytes();
+      ImageGallerySaverPlus.saveImage(imageBytes);
       Get.snackbar(
         "                       Image saved successfully",
         "",
