@@ -130,51 +130,9 @@ class _ExitScreenState extends State<ExitScreen> {
                       Get.back();
                     },
                   ),
-
-                  // InkWell(
-                  //   onTap: () {
-
-                  //   },
-                  //   child: GradientContainerDesign(
-                  //     title: "Exit",
-                  //     width: 160,
-                  //     height: 40,
-                  //     onPressed: () {},
-                  //   ),
-                  // ),
                   const SizedBox(
                     width: 10,
                   ),
-                  // InkWell(
-                  //   onTap: () {
-                  //     Get.to(() => PurchaseScreen());
-                  //   },
-                  //   child: Container(
-                  //     width: 160,
-                  //     height: 40,
-                  //     decoration: BoxDecoration(
-                  //       gradient: LinearGradient(
-                  //         begin: Alignment.topCenter,
-                  //         end: Alignment.bottomCenter,
-                  //         colors: [
-                  //           Color(0xFFDBA631),
-                  //           Color(0xFFD8BD62),
-                  //           Color(0xFFF1DD80),
-                  //           Color(0xFFFBF2A8),
-                  //           Color(0xFFF1DD80),
-                  //           Color(0xFFDBA631),
-                  //         ],
-                  //       ),
-                  //       borderRadius: BorderRadius.circular(6),
-                  //     ),
-                  //     child: Center(
-                  //       child: Text(
-                  //         AppLabels.goPremium.tr,
-                  //         style: TextStyle(),
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
                 ],
               ),
             ],

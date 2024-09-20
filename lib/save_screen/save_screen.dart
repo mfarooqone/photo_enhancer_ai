@@ -493,10 +493,10 @@ class GradientContainerDesign1 extends StatelessWidget {
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
           colors: [
-            AppColors.pinkColor,
             AppColors.redColor,
-            AppColors.orangeColor,
+            AppColors.pinkColor,
             AppColors.blueColor,
+            AppColors.orangeColor,
           ],
         ),
         borderRadius: BorderRadius.circular(10),
